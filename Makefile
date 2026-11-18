@@ -50,7 +50,7 @@ pkg: ## Build pkg
 test: ## Run Tests for all Go modules.
 	set -o xtrace; \
 	for dir in $(GO_MOD_DIRS) ; do \
-	    cd $$dir && { [ "$$dir" = ./hack/tools ] || go test ./... ; } && cd - >/dev/null; \
+	    cd $$dir && go test ./... && cd - >/dev/null; \
 	done
 
 test-signer-program: ## Run Tests for the cliplugin against a pre-compiled plugin program.
