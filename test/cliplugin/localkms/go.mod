@@ -22,3 +22,5 @@ require (
 	google.golang.org/genproto/googleapis/api v0.0.0-20260727163830-6c54dddc4772 // indirect
 	google.golang.org/protobuf v1.36.12 // indirect
 )
+
+replace github.com/coreos/go-oidc/v3 => github.com/sealhouse/go-oidc/v3 v3.21.1-rhtas.1
