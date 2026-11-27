@@ -42,3 +42,5 @@ require (
 )
 
 retract v1.10.1 // License issue
+
+replace github.com/coreos/go-oidc/v3 => github.com/sealhouse/go-oidc/v3 v3.21.1-rhtas.1
